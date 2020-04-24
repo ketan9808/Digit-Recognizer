@@ -1,20 +1,57 @@
-#Digit-Recognizer
+# Digit Recognizer
+
+The Hello world program of Computer Vision
 
 ## Introduction
-The repository contain different types of models that were Build over MINST dataset.
 
-The MNIST dataset contain 60,000 training and 10,000 testing images of size 28X28
+This repository contain Jupyter Notebooks demonstraing different machine learning and deep learning models that can be used to predict the correct class of handwritted digit from MNIST dataaset. The MNIST dataset is available on many websites and framework(for more information about the dataset see Data section).
 
-## some data from MINST Dataset
+## Notebook Details
 
-## Information about files -
-Digit_recognizer_NN - A simple Neural network created for MNIST dataset
-	- The model overfits
-![sample image](./Results/NN_Training_Validation_accuracy.png)
-![sample image](./Results/NN_Training_Validation_loss.png)
-	- TODO add Aurmentation and Dropouts to check whether model perform well or not
-Digit_recognizer_cnn - A convolution Neural Network model created over MINST dataset
-	- The model is a little better than simple Neural Network
-![sample image](./Results/CNN_Training_Validation_accuracy.png)
-![sample image](./Results/CNN_Training_Validation_loss.png)
-	- TODO add augmentation an Dropouts to check whether accuracy improves further
+The repository currently contain models created by following methods:
+
+- CNN
+- NN
+
+other models are to be uploaded soon
+
+## Data
+
+The MNIST dataset is available on many platform:
+
+- Tensorflow_dataset: use the following command to load mnist dataset
+```tensorflow.keras.datasets.mnist.load_data()```
+
+- tensorflow_dataset: use the following command to load mnist dataset
+```tensorflow_datasets.load(name='mnist')```
+
+- Kaggle: [Digit Recognizer](https://www.kaggle.com/c/digit-recognizer)
+
+The dataset is available on many other platform you can download it from any platform and use it here.
+
+## Getting Started
+
+If you have all the necessary library along with jupyter notebook you can just clone the repo and start working on the Notebooks. Or in case you don't have them follow the following steps:
+
+- clone the repository on your system.
+- download the dataset and place it in "Dataset" folder.
+- create a python virtual environment.(optional)
+- install required packages using following command
+```pip install -r requirements.txt # to be uploaded soon```
+
+and you are ready to Rock and Roll with the Notebook.
+
+## Used cases
+
+The most efficient model created here can be hosted and can be used along with mobile or web application to recognize indivisual digits.
+
+## Built With
+
+- [pandas](https://pandas.pydata.org/) - Python Data analysis library
+- [seaborn](https://seaborn.pydata.org/) - The graph plotting library
+- [Tensorflow](https://www.tensorflow.org/) - The Deep Learning framework
+- [sklearn](https://scikit-learn.org/stable/) - The Machine Learning framework used
+
+## License
+
+This project is licensed under the GNU General Public Licence v3.0 License - see the [LICENSE.md](LICENSE.md) file for details.
